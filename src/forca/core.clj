@@ -11,6 +11,10 @@
 (defn perdeu [] (print "Você perdeu!"))
 (defn ganhou [] (print "Você ganhou!"))
 
+(defn letras-faltantes [palavra acertos]
+  (remove (fn [letra] (contains? acertos (str letra))) palavra)
+)
+
 (defn jogo [vidas palavra acertos]
   (if (= vidas 0)
     (perdeu)
