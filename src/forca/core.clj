@@ -9,6 +9,8 @@
 
 (def total-de-vidas 6)
 (defn perdeu [] (print "Você perdeu!"))
+(defn ganhou [] (print "Você ganhou!"))
+
 (defn jogo [vidas]
   (if (= vidas 0)
     (perdeu)
