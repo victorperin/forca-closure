@@ -11,7 +11,7 @@
 (defn perdeu [] (print "Você perdeu!"))
 (defn ganhou [] (print "Você ganhou!"))
 
-(defn jogo [vidas]
+(defn jogo [vidas palavra acertos]
   (if (= vidas 0)
     (perdeu)
     (do 
